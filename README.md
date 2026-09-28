@@ -37,11 +37,3 @@ Wtyczka będzie wykorzystywać zdarzenia z silnika CS2 (CounterStrikeSharp) do m
 * **Konfiguracja**: Plik `quests.json` zawierający URL do API, klucz API serwera (Authorization) oraz ustawienia wiadomości na czacie.
 * **Komunikacja API**: `HttpClient` (asynchroniczne zapytania non-blocking, aby nie lagować serwera). Z użyciem biblioteki `System.Text.Json`.
 
-## 7. Plan implementacji (Kroki do wykonania)
-1. Inicjalizacja projektu CounterStrikeSharp (`dotnet new classlib`).
-2. Utworzenie modeli danych (Player, Quest, Config).
-3. Implementacja warstwy sieciowej (`ApiService`) do komunikacji z API.
-4. Obsługa komend graczy (`!quests`, `!link`).
-5. Rejestracja zdarzeń gry (Event Handlers) do zliczania akcji (zabójstwa, itp.).
-6. Logika zarządzania postępami zadań w pamięci w czasie trwania mapy i wysyłania ich do API.
-7. Dodanie powiadomień na czacie / HUD (PrintToChat / CenterHtml).
